@@ -1,0 +1,418 @@
+#css3kfa-editorpane {
+	/*@extend %styles-clear;*/
+	width: 100%;
+	display:none;
+	position:fixed;
+	background-color: $editorpane-background !important;
+	border-top: 1px solid $panel-border-color !important;
+}
+
+.css3kfa-nobutton {
+	/*@extend %styles-clear;*/
+	width: 18px !important;
+	margin-left: 4px !important;
+}
+.css3kfa-playbutton {
+	/*@extend %styles-clear;*/
+	@extend %playstop;
+	background:url('../../images/play1.png') no-repeat !important;
+}
+.css3kfa-playbutton:hover {
+	background:url('../../images/play-hover.png') no-repeat !important;
+}
+.css3kfa-stopbutton {
+	/*@extend %styles-clear;*/
+	@extend %playstop;
+	background:url('../../images/stop1.png') no-repeat !important;
+}
+.css3kfa-stopbutton:hover {
+	background:url('../../images/stop-hover.png') no-repeat !important;
+}
+
+.css3kfa-timeline-title {
+	/*@extend %styles-clear;*/
+	font-size: 20px !important;
+	height: 10px !important; /*fits below input field on Edge for some reason*/
+	max-height: 10px !important;
+	width: 100% !important;
+}
+
+.css3kfa-menubutton-cntr {
+	width: 20px !important;
+}
+.css3kfa-timeline-menubutton {
+	margin-left: 10px !important;
+
+}
+#css3kfa-fadebg {
+	/*@extend %styles-clear;*/
+	display:none !important;
+	background-color:#000 !important;
+	opacity:0.2 !important;
+}
+.css3kfa-label1 {
+	/*@extend %styles-clear;*/
+	display: inline-block !important;
+	position: relative !important;
+	top: -2px !important;
+	left: 4px !important;
+}
+.css3kfa-label2 {
+	/*@extend %styles-clear;*/
+	display: inline-block !important;
+	position: relative !important;
+	left: 6px !important;
+	font-size: 14px !important;
+}
+.css3kfa-panel,
+.css3kfa-tl-fr,
+.css3kfa-tl-frlrg {
+	/*@extend %styles-clear;*/
+	background-color: $panel-background-color !important;
+	border-left-color: $panel-border-color !important;
+	border-top-color: $panel-border-color !important;
+	border-right-color: $frame-border-color !important;
+	border-bottom-color: $frame-border-color !important;
+	color: #fff !important;
+	/*do not set border width here*/
+}
+.css3kfa-timeline-table {
+	/*@extend %styles-clear;*/
+	background-color: $panel-background-color !important;	
+	height: 100% !important;
+}
+.css3kfa-timeline-table td {
+	/*@extend %styles-clear;*/
+	padding:0 !important;
+	margin:0 !important;
+	width: 100% !important;
+	height: $timeline-cell-height !important;
+}
+
+.css3kfa-timeline-table td.css3kfa-menubutton-cntr {
+	width: 30px !important;
+}
+
+#css3kfa-tl-ctnr {
+	/*@extend %styles-clear;*/
+	display: block !important;
+	position: relative !important;
+}
+#css3kfa-tl-buttons-ctnr
+{
+	/*@extend %styles-clear;*/
+	display: block !important; 
+	overflow: hidden !important;
+}
+input#css3kfa-title-input {
+	/*@extend %styles-clear;*/
+	background-color: $panel-background-color !important;
+	color: #fff !important;
+	width: $timeline-menu-width - 90 !important;
+	padding-left: 10px !important;
+	font-size: 14px !important;
+	line-height: 1.2 !important;
+	height: 24px !important;
+	max-height: 24px !important;
+	vertical-align:top !important;
+	border-width: 0 !important;
+}
+#css3kfa-title-input:hover {
+	color:#fff !important !important;
+}
+/***********************/
+/*Timeline ruler*/
+/*background and border colors*/
+#css3kfa-tl-ruler {
+	/*@extend %styles-clear;*/
+	display: block !important;
+	overflow: hidden !important;
+
+}
+#css3kfa-tl-ruler-ctnr {
+	/*@extend %styles-clear;*/
+	background-color: $panel-background-color !important;	
+}
+.css3kfa-timeline {
+	/*@extend %styles-clear;*/
+	height: $timeline-cell-height !important;
+	max-height: $timeline-cell-height !important;
+	border-width: 1px !important;
+}
+#css3kfa-tl-leftcell, 
+#css3kfa-tl-lyr-window,
+.css3kfa-lightbg {
+	/*@extend %styles-clear;*/
+	background-color: $accordion-bg-color !important;
+	vertical-align:top !important;
+}
+
+/*dimensions and highlights*/
+.css3kfa-tl-bl-fr,
+.css3kfa-tl-bl-fr-lt,
+.css3kfa-tl-bl-fr-dk,
+.css3kfa-kf-mkr, 
+.css3kfa-kf-mkr-dot,
+.css3kfa-kf-mkr-down,
+.css3kfa-kf-mkr-dot,
+.css3kfa-kf-mkr-l,
+.css3kfa-kf-mkr-c,
+.css3kfa-kf-mkr-r {
+	width:$timeline-ruler-cell-width + 2 !important;
+	max-width:$timeline-ruler-cell-width + 2 !important;	
+	background-clip: border-box !important;
+	box-sizing: content-box !important;
+	-webkit-box-sizing: content-box !important;
+	-moz-box-sizing: content-box !important;
+	background-size: initial !important;
+}
+.css3kfa-tl-fr,
+.css3kfa-tl-frlrg {
+	width:$timeline-ruler-cell-width !important;
+	max-width:$timeline-ruler-cell-width !important;	
+	background-clip: border-box !important;
+	background-size: initial !important;
+	box-sizing: content-box !important;
+	-webkit-box-sizing: content-box !important;
+	-moz-box-sizing: content-box !important;
+}
+.css3kfa-tl-bl-fr, 
+.css3kfa-lyr-button,
+.css3kfa-lyr-button-lbl {
+	/*@extend %styles-clear;*/
+	height:$timeline-cell-height !important;
+	max-height:$timeline-cell-height !important;
+}
+
+.css3kfa-tl-fr,
+.css3kfa-tl-frlrg {
+	/*@extend %styles-clear;*/
+	background-color: $panel-background-color !important;
+	border-right-color: $frame-border-color !important;	
+	border-right-width: 1px !important;
+	border-style: solid !important;
+	display: inline-block !important;
+	border-left-width: 1px !important;
+	border-left-color: $panel-border-color !important; 
+	border-style: solid !important;
+	border-top-width: 2px !important;
+	border-bottom-width: 2px !important; 
+	vertical-align:baseline !important;
+ 	font-size: 10px !important; 
+ 	line-height: 30px !important;
+ 	font-family: $arial-font !important;
+	color: #fff !important;
+	background-color: transparent !important;
+	position:relative;
+	text-align:center !important;
+}
+.css3kfa-tl-bl-fr, 
+.css3kfa-lyr-button,
+.css3kfa-lyr-button-lbl {
+	/*@extend %styles-clear;*/
+	height:$timeline-cell-height !important;
+	max-height:$timeline-cell-height !important;
+}
+.css3kfa-tl-bl-fr {
+	/*@extend %styles-clear;*/
+	display: inline-block !important;
+	border-bottom: 1px solid $timeline-cell-dark !important;
+	border-style: solid !important;
+	
+
+}
+.css3kfa-lyr-button {
+	/*@extend %styles-clear;*/
+	background-position: 20px 2px !important;
+	background-repeat: no-repeat !important;
+	line-height: 16px !important;
+	font: 14px arial !important;
+	border-width: 0px !important;
+	cursor: default !important;
+	width:100% !important; 
+	display: table !important;
+	overflow: hidden !important;
+	-moz-user-select: none !important;
+	-webkit-user-select: none !important;
+	user-select: none !important;
+}
+
+
+
+.css3kfa-tl-frlrg {
+	/*@extend %styles-clear;*/
+	font-size:14px !important;
+	position:relative !important;
+	top: 2px !important;
+}
+.css3kfa-tl-fr-hover {
+	/*@extend %styles-clear;*/
+	cursor:pointer !important; 
+	background-color: $button-down-color !important; 
+	border-right: 1px solid $button-down-color !important;
+}
+.css3kfa-tl-fr-hlt {
+	/*@extend %styles-clear;*/
+	background-color: $button-down-color !important;	
+}
+
+div.ui-dialog {
+	z-index: 1000000 !important
+}
+/******************************/
+/*individual timeline blocks*/
+.css3kfa-tl-cntr-menucell {
+	/*@extend %styles-clear;*/
+	vertical-align: middle !important;
+	background-color: $panel-background-color !important;
+	width: $timeline-menu-width !important;
+	max-width: $timeline-menu-width !important;
+	height: 34px !important;
+	max-height: 34px !important;
+}
+.css3kfa-tl-topleft {
+	/*@extend %styles-clear;*/	
+}
+.css3kfa-tl-bl {
+	/*@extend %styles-clear;*/
+	font-size: 10px !important; 
+	font-family: $arial-font !important;
+
+}
+
+.css3kfa-tl-bl-fr-lt {
+	/*@extend %styles-clear;*/
+	background-color: #fff !important;
+	
+}
+.css3kfa-tl-bl-fr-dk {
+	/*@extend %styles-clear;*/
+	background-color: $timeline-cell-dark !important;
+}
+.css3kfa-tl-space {
+	/*@extend %styles-clear;*/
+	 background-color: $panel-background-color !important;	 
+}
+
+#css3kfa-tl-add-lyr:hover, 
+#css3kfa-tl-delete-lyr:hover {
+	/*@extend %styles-clear;*/
+	cursor:pointer !important;
+}
+.css3kfa-tl-bar {
+	/*@extend %styles-clear;*/
+	width:0px !important;
+	max-width:0px !important;
+	border-left: 2px solid black !important;
+	display: block !important;
+	float: none !important;
+	position: relative !important;
+	pointer-events: none !important; /*propogates event to underlying object*/
+}
+.css3kfa-tl-bar-click {
+	/*@extend %styles-clear;*/
+	width:0px !important;
+	max-width:0px !important;
+	display: block !important;
+	border-left: 1px solid red !important;
+	pointer-events: none !important;
+}
+.css3kfa-kf-mkr {
+	/*@extend %styles-clear;*/
+	background-color: $timeline-marker !important;
+}
+.css3kfa-kf-mkr-down {
+	/*@extend %styles-clear;*/
+	background-color: $timeline-marker-down !important;
+}
+/*setting border width to zero will get rid of break in line, but on some themes it does not work so the cell size varies across themes, resulting in misalignment */
+.css3kfa-kf-mkr, 
+.css3kfa-kf-mkr-down {
+	/*@extend %styles-clear;*/
+	background-repeat: no-repeat !important;
+	background-position: 0px 12px !important;
+	border-bottom: 1px solid #000 !important;
+
+}
+
+.css3kfa-kf-mkr-dot,
+.css3kfa-kf-mkr-l,
+.css3kfa-kf-mkr-c,
+.css3kfa-kf-mkr-r {
+	border-color: transparent !important;
+	/*@extend %styles-clear;*/	
+}
+.css3kfa-kf-mkr-dot {
+	background-image:url('../../images/tl-mkr.png') !important;
+}
+.css3kfa-kf-mkr-l {
+	background-image:url('../../images/tl-mkr-l.png') !important;
+}
+.css3kfa-kf-mkr-c {
+	background-image:url('../../images/tl-mkr-c.png') !important;
+}
+.css3kfa-kf-mkr-r {
+	background-image:url('../../images/tl-mkr-r.png') !important;
+}
+
+/*
+.css3kfa-kf-mkr-downempty {
+	background-color: $timeline-marker-downempty !important;
+}
+%button-makechild {
+	background-repeat: no-repeat !important;
+	height: 20px !important;
+	display: table-cell !important;
+	cursor: pointer !important;
+}
+.css3kfa-lyr-button-makechild {
+	@extend %button-makechild;
+	background-image:url('../../images/child.png') !important;
+	width: 30px !important;
+}
+.css3kfa-lyr-button-unchild {
+	@extend %button-makechild;
+	background-image:url('../../images/unchild.png') !important;
+	width: 30px !important;
+}
+.css3kfa-lyr-button-dragover {
+	border-bottom: 2px dotted red !important;
+	height: 21px !important;
+}
+*/
+.css3kfa-lyr-button-down {
+	background-color: $button-down-color !important;
+	color: white !important;
+}
+
+.css3kfa-lyr-button-outer {
+	overflow:hidden !important;
+	max-width:$timeline-menu-width !important;
+	display: table-cell !important; 
+}
+.css3kfa-lyr-button-lbl {
+	padding-left: 16px !important;
+	text-align: left !important;  
+	font-family: $arial-font;
+	font-size: 12px !important;
+	vertical-align: middle !important;;
+	overflow:hidden !important;
+	line-height: 2 !important;
+}
+
+
+#css3kfa-animtype {
+	display:inline-block !important;
+	width:20px !important;
+	max-height:20px !important;
+	max-width:20px !important;
+	height:20px !important;
+	background-color:transparent !important;
+	background-image:url('../../images/anim.png') !important;
+}
+.css3kfa-issaving {
+	background-position: -40px 0 !important;
+}
+.css3kfa-failedsave {
+	background-position: -60px 0 !important;
+}

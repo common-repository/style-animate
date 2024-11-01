@@ -1,0 +1,62 @@
+$media: only screen;
+$feature: max-width;
+$value: emCalc(768px) !default;
+
+/*
+$panel-border-color: #D1B6B6; 
+$frame-border-color: #6c4444;
+$panel-background-color: #A06767; 
+$button-down-color:#593737;
+$accordion-inner-panel-color:#F8F9F0;
+$accordion-head-text-color:#666;
+$accordion-bg-color:#eee;
+$accordion-border-color:#666;
+$stylepane-border-color:#999;
+$accordion-inner-border-top:#ccc;
+*/
+$panel-border-color: #898C98; 
+$frame-border-color: #555862;
+$panel-background-color: #4D4F57; 
+$button-down-color:#2F3135;
+$accordion-inner-panel-color:#EFF0F1;
+$accordion-bg-color:#F2F3F4;
+$accordion-head-text-color:#575E64;
+$accordion-border-color:#5E666F;
+$stylepane-border-color:#9CA4AB;
+$accordion-inner-border-top:#CFD2D6;
+
+
+$timeline-cell-dark:#FAD6FC; /*darker cell (every 5th cell) in timeline */
+$timeline-marker:#75ACFF;
+$timeline-marker-down:#1171FF;
+
+$editorpane-background:#333;
+$stylepane-title-border:#a3a3a3;
+
+$button-text-color:#555;
+$button-color:#ccc;
+
+$arial-font:arial,sans-serif;
+$font-stack:verdana, arial, sans-serif;
+
+/*timeline dimensions for the cells - widths take differing borders into account but are calculated by sass*/
+$timeline-cell-height:26px;
+$timeline-ruler-cell-width:18px;
+
+$timeline-menu-width:220px;
+
+
+%outline {	border: 1px solid black;}
+%outline-red {	border: 1px solid red;}
+%outline-blue {	border: 1px solid blue;}
+
+@import 'defaults';
+@import 'marker';
+@import 'timeline';
+@import 'stylepane';
+@import 'dialog';
+@import 'admin';
+
+
+
+

@@ -1,0 +1,83 @@
+.css3kfa-dialog {
+	font-size: 16px !important;
+}
+.css3kfa-dialog div {
+	padding-top: 20px !important;
+	font-size: 14px !important;
+	text-align:justify;
+}
+.css3kfa-showcsswindow {
+	text-align: left !important;
+}
+.ui-dialog.ui-widget.css3kfa-dlg {
+	overflow:initial !important;
+	height:auto !important;
+	border: 1px solid $panel-background-color !important;
+	padding:0 !important;
+	margin:0 !important;
+	position:fixed !important;
+	background-color:#fff !important;
+	border-radius: 4px !important;
+	border-bottom-left-radius: 0 !important;
+	border-bottom-right-radius: 0 !important;
+}
+.ui-dialog.ui-widget.css3kfa-dlg .ui-widget-header {
+	background-color: $panel-background-color !important;
+	background-image:none !important;
+	outline:none !important;
+}
+.ui-dialog.ui-widget.css3kfa-dlg .ui-dialog-titlebar {
+	font-size:14px !important;
+	margin:0 !important;
+	padding:5px !important;
+	line-height:1 !important;
+}
+.ui-dialog.ui-widget.css3kfa-dlg button.ui-button.ui-button-text-only {
+	background-image:none !important;
+	background-color: $accordion-bg-color !important;
+	color:$button-text-color;
+	border-color:$panel-border-color;
+}
+.ui-dialog.ui-widget.css3kfa-dlg button.ui-button.ui-button-text-only:hover {
+	color:#fff !important;;
+	background-color:$button-down-color !important;
+}
+
+.ui-dialog.ui-widget.css3kfa-dlg button.ui-button-icon-only.ui-dialog-titlebar-close,
+.ui-dialog.ui-widget.css3kfa-dlg button.ui-button-icon-only.ui-dialog-titlebar-close:hover {
+	background-image:url('../../images/close-dialog.png') !important;
+	background-color:transparent !important;
+	background-repeat: no-repeat !important;
+	border-width: 0 !important;
+}
+.ui-dialog.ui-widget.css3kfa-dlg span.ui-button-icon-primary.ui-icon.ui-icon-closethick,
+.ui-dialog.ui-widget.css3kfa-dlg span.ui-button-icon-primary.ui-icon.ui-icon-closethick:hover,
+.ui-dialog.ui-widget.css3kfa-dlg span.ui-button-icon-primary.ui-icon.ui-icon-closethick:active {
+	background-image:none !important;	
+	border-width:0 !important;
+}
+/*center uploader text and button, can't just align it*/
+/*this will affect any other plugin which uses front-end file uploader, but not back-end*/
+div.uploader-inline-content {
+	padding-left: 45% !important;
+}
+div.uploader-inline-content p
+{
+	padding-left: 65px !important;
+}
+div.uploader-inline-content p:first-child
+{
+	position:relative;
+	padding-left: 0 !important;
+	left: -16px !important;
+}
+div.uploader-inline-content h2
+{
+	position:relative;
+	left: -55px !important;
+}
+div.upload-ui {
+	text-align: left !important;
+}
+
+

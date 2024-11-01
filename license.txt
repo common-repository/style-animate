@@ -1,0 +1,24 @@
+Style & Animate, a front-end visual CSS editor and keyframe animator plugin for WordPress
+Copyright 2017 Richard Watton (email: r.m.watton@gmail.com)
+
+This software is distributed under the terms of the GPLv2 license (http://www.gnu.org/licenses/gpl-2.0.html)
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License, version 2, as
+published by the Free Software Foundation.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+
+
+Attributions:
+Menu icons:	http://p.yusukekamiyamane.com/ (creative commons license: https://creativecommons.org/licenses/by/3.0/)
+Alpha Color Picker, by Brad Martin - http://braadmartin.com/alpha-color-picker-control-for-the-wordpress-customizer/ (GPL)
+jQuery Simple Context Menu, by Joe Walnes - http://joewalnes.com
+Admin list table, taken from Custom List Table Example, Copyright 2015  Matthew Van Andel  (email : matt@mattvanandel.com)

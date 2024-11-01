@@ -1,0 +1,55 @@
+@CHARSET "ISO-8859-1";
+li#toplevel_page_css3kfa .dashicons-before {
+	background-image: url('../../images/admin-icon.png');
+	background-repeat:no-repeat;
+	background-position: 6px 6px;
+}
+
+.css3kfa-adminhelp-leftpanel {
+
+    margin-top: 20px;
+    float: left;
+    margin-bottom: 20px;
+
+}
+.css3kfa-adminhelp {
+
+    background-color: #fff;
+    margin-top: 20px;
+    position: relative;
+    border-left:1px solid #ddd;
+    border-right:1px solid #ddd;
+    border-top:1px solid #ddd;
+    float: right;
+    margin-bottom: 20px;
+
+}
+
+.css3kfa-admininner {
+	padding: 10px;
+	border-bottom: 1px solid #ddd;
+}
+.css3kfa-adminhead {
+	margin:0;
+
+}
+.css3kfa-adminhelp hr {
+	padding-left:0;
+	margin-right:0;
+	width: 100%;
+}
+
+.css3kfa-help1 {
+	color: #fff;
+	background-color: #aaa;
+	border-radius: 2px;
+	padding-left: 20px;
+	padding-right: 4px;
+	background-image: url('../../images/smallicon.png');
+	background-position: 4px 2px;
+	background-repeat: no-repeat;
+	padding-bottom: 1px;
+}
+.css3kfa-help2 {
+	font-weight: bold;
+}

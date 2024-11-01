@@ -1,0 +1,161 @@
+/*set all div,tables etc. to default values to override anything set by theme*/
+/*everything must be set as !important in class and id overrides, as some styles are nested and the full selector would be needed otherwise*/
+
+/* !important defaults - these are applied directly where there are no immediate children (marker and reticle) */
+/* this can be applied to everything but there is (probably) no point */
+%styles-clear {
+	padding:0 !important;
+	margin:0 !important;
+	outline-width:0 !important;
+	border-width:0 !important;
+	border-radius:0 !important;
+	min-height: 0 !important;
+	max-height: none !important;
+	background-image:none !important;
+	background-color:transparent !important;
+	border-style:solid !important;
+	font-family: $font-stack !important;
+	line-height:1.2 !important;
+	text-align:left !important;	
+	background-position: 0 0 !important;
+	background-repeat: no-repeat !important;
+	background-clip: border-box !important;
+	background-size:initial !important;
+	box-sizing: content-box !important;
+	-webkit-box-sizing: content-box !important;
+	-moz-box-sizing: content-box !important;
+	width: auto;
+	height: auto;
+	display:auto;
+}
+
+/* a clearing style which can be used anywhere */
+.css3kfa-empty {
+	@extend %styles-clear;
+}
+
+/* apply clearing values to top-level elements */
+/* can't use !important or individual styles won't override these */
+#css3kfa-stylepane input,
+#css3kfa-editorpane input,
+#css3kfa-stylepane table,
+#css3kfa-editorpane table,
+#css3kfa-stylepane td,
+#css3kfa-editorpane td,
+.ui-dialog.ui-widget.css3kfa-dlg,
+#css3kfa-stylepane select,
+#css3kfa-tl-ctnr table,
+#css3kfa-tl-ctnr td,
+#css3kfa-waiting-block div,
+.css3kfa-typemenu div,
+#css3kfa-dialog div,
+#css3kfa-dialog p
+ {
+	padding:0;
+	margin:0;
+	outline-width:0;
+	border-width:0;
+	border-radius:0;
+	background-position: 0 0;
+	min-height: 0;
+	max-height: none;
+	background-image:none;
+	background-color:transparent;
+	border-style:solid;
+	font-family: $font-stack;
+	line-height:1.2;
+	text-align:left;
+	background-repeat: no-repeat;
+	background-clip: border-box;
+	background-size:initial;
+	box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	width: auto;
+	height: auto;
+	display:auto;	
+}
+#css3kfa-stylepane tr,
+#css3kfa-editorpane tr {
+	padding:0;
+	margin:0;
+	outline-width:0;
+	border-width:0;
+	border-radius:0;
+	background-image:none;
+	background-color:transparent;
+}
+#css3kfa-stylepane input,
+#css3kfa-editorpane input,
+#css3kfa-stylepane table,
+#css3kfa-editorpane table,
+#css3kfa-stylepane td,
+#css3kfa-editorpane td,
+.ui-dialog.ui-widget.css3kfa-dlg  {
+	color:#000;
+}
+
+#css3kfa-stylepane table,
+#css3kfa-editorpane table,
+#css3kfa-tl-ctnr table {
+	table-layout:auto !important;
+	border-collapse: collapse !important;
+	border-spacing: 0 !important;
+}
+#css3kfa-stylepane td,
+#css3kfa-editorpane td,
+#css3kfa-tl-ctnr td {
+	box-sizing:content-box !important;
+	-webkit-box-sizing:content-box !important;
+	-moz-box-sizing:content-box;
+	vertical-align:middle;
+}
+
+/*style div's separately to exclude some styles from color picker*/
+#css3kfa-stylepane div,
+#css3kfa-editorpane div  {
+	color:#fff;
+	padding:0;
+	outline-width:0;
+	border-width:0;
+	border-radius:0;
+	background-color:transparent;
+	background-repeat:no-repeat;
+	border-style:solid;
+	font-family: $font-stack;
+	line-height:1.2;
+	text-align:left;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-clip: border-box;
+	background-size:initial;
+	box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	display:auto;	
+}
+
+/*some styles mess up color picker, so exclude from that*/
+#css3kfa-stylepane div:not(>.iris-picker),
+#css3kfa-editorpane div {
+	margin: 0;
+	background-image:none;
+	display:inline-block;
+}
+
+/*don't override color or boxes won't get cleared / set color */
+#css3kfa-stylepane input,
+#css3kfa-editorpane input  {
+	outline-width:1px;
+	border-width:1px;
+	border-radius:2px;
+	background-color:#fff;
+}
+#css3kfa-stylepane select {
+	margin-right:4px;
+}
+#css3kfa-stylepane tr:first-child td {
+	padding-top:2px;
+}
+
+

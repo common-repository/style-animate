@@ -1,0 +1,55 @@
+/*see style_admin.css for styles to be used within the admin section, these are for the admin menu bar at the top of the screen */
+/*standard Dashicon*/
+/*
+#wpadminbar #wp-admin-bar-addanimation > .ab-item:before {
+	font-family: "dashicons" !important;
+	content: "\f163" !important;
+	top:2px;
+}
+*/
+
+#wpadminbar #wp-admin-bar-addanimation > .ab-item:before {
+	
+}
+.css3kfa-topicon-container {
+	position:fixed;
+	top: 0;
+	top: 14px;
+	display:inline-block;
+	width:0px;
+	height:0px;
+	border:30px solid rgba(0,0,0,0);
+	border-top:30px solid #000;
+	border-left:30px solid #000;
+	display:none;
+}
+.css3kfa-topicon {
+	position:relative;
+	left: -26px; top: -30px;
+	cursor:pointer;
+
+}
+.css3kfa-button-text-active {
+	display:none;
+}
+a.ab-item:hover span.css3kfa-custom-icon {
+	background-image:url('../../images/admin-icon-active.png');
+}
+
+.css3kfa-custom-icon-active,
+.css3kfa-custom-icon-inactive {
+	float:left; 
+	width:22px !important; 
+	height:22px !important; 
+	margin-left: 5px !important;
+	margin-top: 5px !important; 
+	margin-right: 5px !important; 
+	background-repeat:no-repeat;
+	background-position: 2px 2px;
+}
+.css3kfa-custom-icon-active {
+	background-image:url('../../images/admin-icon-active.png');
+}
+.css3kfa-custom-icon-inactive {
+	background-image:url('../../images/admin-icon.png');
+}
